@@ -16,18 +16,24 @@ IF NOT EXIST *file*.exe goto clean
 IF NOT EXIST *1*.exe goto clean 
 IF NOT EXIST *good*.exe goto clean
 :disinfectfileexe
+echo "*file*.exe" in %DRIVE% is potentially infected
+pause
 ren "*file*.exe" "*file*.agq"
 move "%DRIVE%\*file*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto clean
 :disinfectgoodexe
+echo "*file*.exe" in %DRIVE% is potentially infected
+pause
 ren "*good*.exe" "*good*.agq"
 move "%DRIVE%\*good*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto clean
 :disinfect1exe
+echo "*file*.exe" in %DRIVE% is potentially infected
+pause
 ren "*1*.exe" "*1*.agq"
 move "%DRIVE%\*1*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
 echo Threat disinfected.
