@@ -12,7 +12,7 @@ CD "%DRIVE%"
 IF EXIST *good*.exe goto disinfect
 IF NOT EXIST *good*.exe goto clean
 :disinfect
-ren "*good*.exe" "*good*.agq
+ren "*good*.exe" "*good*.agq"
 move "%DRIVE%\*good*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
 echo Threat disinfected.
 goto clean
