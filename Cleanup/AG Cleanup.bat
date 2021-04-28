@@ -1,6 +1,10 @@
 @echo off
+:top
 echo Type folder path that you would like to clean of executables
 set /p folder=
+IF EXIST %folder% goto cont
+IF NOT EXIST %folder% goto top
+:contact me
 echo Are you sure you would like to clean %folder% of executables? Y/N
 choice /c yn /n
 if errorlevel 2 goto N
