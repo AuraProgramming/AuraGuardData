@@ -9,12 +9,29 @@ IF NOT EXIST %DRIVE% goto DRIVESELECT
 cls
 echo Scanning for known viruses...
 CD "%DRIVE%"
-IF EXIST *good*.exe goto disinfect
+IF EXIST *good*.exe goto disinfectgoodexe
+IF EXIST *1*.exe goto disinfect1exe
+IF EXIST *file*.exe goto disinfectfileexe
+IF NOT EXIST *file*.exe goto clean
+IF NOT EXIST *1*.exe goto clean 
 IF NOT EXIST *good*.exe goto clean
-:disinfect
+:disinfectfileexe
+ren "*file*.exe" "*file*.agq"
+move "%DRIVE%\*file*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
+echo Threat disinfected.
+echo Threat disinfected>>"AG LOG.txt"
+goto clean
+:disinfectgoodexe
 ren "*good*.exe" "*good*.agq"
 move "%DRIVE%\*good*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
 echo Threat disinfected.
+echo Threat disinfected>>"AG LOG.txt"
+goto clean
+:disinfect1exe
+ren "*1*.exe" "*1*.agq"
+move "%DRIVE%\*1*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
+echo Threat disinfected.
+echo Threat disinfected>>"AG LOG.txt"
 goto clean
 :clean
 cls
