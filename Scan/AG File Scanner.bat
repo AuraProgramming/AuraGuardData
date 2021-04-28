@@ -10,6 +10,7 @@ for /f "tokens=* delims= " %%x in (scannedhash.txt) do (
 			ren "%file%" "%file%.AGQ"
 			move "%file%" "C:\Program Files\Aura Guard\AG Quarantine"
 			echo. %file% was infected and quarantined.
+			echo. %file% was infected and quarantined.>>"AG LOG.txt"
 			pause >nul
 			cls
 		)
