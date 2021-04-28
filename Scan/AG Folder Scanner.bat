@@ -19,19 +19,19 @@ IF NOT EXIST *good*.exe goto clean
 ren "*file*.exe" "*file*.agq"
 move "%DRIVE%\*file*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
 echo Threat disinfected.
-echo Threat disinfected>>"AG LOG.txt"
+pause
 goto clean
 :disinfectgoodexe
 ren "*good*.exe" "*good*.agq"
 move "%DRIVE%\*good*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
 echo Threat disinfected.
-echo Threat disinfected>>"AG LOG.txt"
+pause
 goto clean
 :disinfect1exe
 ren "*1*.exe" "*1*.agq"
 move "%DRIVE%\*1*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
 echo Threat disinfected.
-echo Threat disinfected>>"AG LOG.txt"
+pause
 goto clean
 :clean
 cls
