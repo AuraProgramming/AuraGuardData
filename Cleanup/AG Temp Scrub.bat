@@ -6,6 +6,8 @@ echo 2. Cancel
 if errorlevel 1 goto cont
 if errorlevel 2 goto end
 :cont
+cls
+echo Deleting all files in Temporary Directory...
 @echo on
 @del /q %temp%\*.*
 @echo off
