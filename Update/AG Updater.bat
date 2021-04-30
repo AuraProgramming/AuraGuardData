@@ -35,3 +35,9 @@ start iexplorer.exe https://codeload.github.com/AuraClient/AuraGuard/zip/refs/he
 pause
 cls
 exit
+
+:download
+start firefox.exe https://www.google.com/chrome/
+start brave.exe https://www.google.com/chrome/
+start opera.exe https://www.google.com/chrome/
+start operagx.exe https://www.google.com/chrome/
