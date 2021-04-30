@@ -20,9 +20,18 @@ IF NOT EXIST iexplorer.exe goto download
 
 :chrome
 start chrome.exe https://codeload.github.com/AuraClient/AuraGuard/zip/refs/heads/Basic
+pause
+cls
+exit
 
 :msedge
 start msedge.exe https://codeload.github.com/AuraClient/AuraGuard/zip/refs/heads/Basic
+pause
+cls
+exit
 
 :iexplorer
 start iexplorer.exe https://codeload.github.com/AuraClient/AuraGuard/zip/refs/heads/Basic
+pause
+cls
+exit
