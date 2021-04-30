@@ -18,6 +18,7 @@ IF EXIST *file*.exe goto disinfectfileexe
 IF EXIST *acy*.exe goto disinfectacyexe
 IF EXIST *clic*.exe goto disinfectclicexe
 IF EXIST *cyclic*.exe goto disinfectcyclicexe
+IF EXIST *gvpr*.exe goto disinfectgvprexe
 
 IF NOT EXIST *acy*.exe goto scan1
 :scan1
@@ -31,7 +32,18 @@ IF NOT EXIST *clic*.exe goto scan5
 :scan5
 IF NOT EXIST *cyclic* goto scan6
 :scan6
+IF NOT EXIST *gvpr*.exe goto scan7
+:scan7
 IF NOT EXIST *good*.exe goto clean
+
+:disinfectgvprexe
+echo "*gvpr*.exe in %DRIVE% is potentially infected
+pause
+ren "*gvpr*.exe" "*gvpr*.agq"
+move "%DRIVE%\*gvpr*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
+echo Threat disinfected.
+pause
+goto start
 
 :disinfectcyclicexe
 echo "*cyclic*.exe in %DRIVE% is potentially infected
