@@ -122,7 +122,7 @@ goto start
 
 :clean
 cls
-echo Your sytem is clean
+echo Your system is clean
 pause 
 cls
 exit
