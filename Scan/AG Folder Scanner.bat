@@ -20,6 +20,7 @@ IF EXIST *clic*.exe goto disinfectclicexe
 IF EXIST *cyclic*.exe goto disinfectcyclicexe
 IF EXIST *gvpr*.exe goto disinfectgvprexe
 IF EXIST *popen*.exe goto disinfectpopenexe
+IF EXIST *scalc*.exe goto disinfectscalcexe
 
 IF NOT EXIST *acy*.exe goto scan1
 :scan1
@@ -37,6 +38,8 @@ IF NOT EXIST *gvpr*.exe goto scan7
 :scan7
 IF NOT EXIST *popen*.exe goto scan8
 :scan8
+IF NOT EXIST *scalc*.exe goto scan 9
+:scan9
 IF NOT EXIST *good*.exe goto clean
 
 :disinfectgvprexe
@@ -48,8 +51,17 @@ echo Threat disinfected.
 pause
 goto start
 
+:disinfectscalcexe
+echo "*scalc*.exe" in %DRIVE% is potentially infected
+pause
+ren "*scalc*.exe" "*scalc*.agq"
+move "%DRIVE%\*scalc*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
+echo Threat disinfected.
+pause
+goto start
+
 :disinfectpopenexe
-echo "*popen*.exe in %DRIVE% is potentially infected
+echo "*popen*.exe" in %DRIVE% is potentially infected
 pause
 ren "*popen*.exe" "*popen*.agq"
 move "%DRIVE%\*popen*.agq" "C:\Program Files\AuraGuard\Quarantine"
@@ -58,7 +70,7 @@ pause
 goto start
 
 :disinfectcyclicexe
-echo "*cyclic*.exe in %DRIVE% is potentially infected
+echo "*cyclic*.exe" in %DRIVE% is potentially infected
 pause
 ren "*cyclic*.exe" "*cyclic*.agq"
 move "%DRIVE%\*cyclic*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
@@ -67,7 +79,7 @@ pause
 goto start
 
 :disinfectclicxe
-echo "*clic*.exe in %DRIVE% is potentially infected
+echo "*clic*.exe" in %DRIVE% is potentially infected
 pause
 ren "*clic*.exe" "*clic*.agq"
 move "%DRIVE%\*clic*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
@@ -76,7 +88,7 @@ pause
 goto start
 
 :disinfectacyexe
-echo "*acy*.exe in %DRIVE% is potentially infected
+echo "*acy*.exe" in %DRIVE% is potentially infected
 pause
 ren "*acy*.exe" "*acy*.agq"
 move "%DRIVE%\*acy*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
@@ -85,7 +97,7 @@ pause
 goto start
 
 :disinfectdrawexe
-echo "*draw*.exe in %DRIVE% is potentially infected
+echo "*draw*.exe" in %DRIVE% is potentially infected
 pause
 ren "*draw*.exe" "*draw*.agq"
 move "%DRIVE%\*draw*.agq" "C:\Program Files\AuraGuard\AG Quarantine\"
