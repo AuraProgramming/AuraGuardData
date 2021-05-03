@@ -7,7 +7,7 @@ cls
 for /f "tokens=* delims= " %%x in (url.txt) do (
 	for /f "tokens=* delims= " %%y in ("AG DB IP.txt") do (
 		if "%%x" == "%%y" (
-      taskkill /IM chrome.exe /T /F
+			start chrome.exe https://sites.google.com/view/auraguardblocked/home
 			cls
 		)
 	)
