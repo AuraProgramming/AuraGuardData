@@ -8,7 +8,7 @@ for /f "tokens=* delims= " %%x in (scannedhash.txt) do (
 	for /f "tokens=* delims= " %%y in ("AG DB.txt") do (
 		if "%%x" == "%%y" (
 			ren "%file%" "%file%.AGQ"
-			move "%file%" "C:\Program Files\Aura Guard\AuraGuard-Basic\AG Quarantine"
+			move "%file%" "C:\AuraGuard\AG Quarantine"
 			echo. %file% was infected and quarantined.
 			echo. %file% was infected and quarantined.>>"AG LOG.txt"
 			pause >nul
