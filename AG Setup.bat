@@ -1,6 +1,6 @@
 @echo off
 mkdir "C:\AuraGuard\"
-echo Extract the file to C:\Extract AG Here\ and rename the folder to AuraGuard
+echo Extract the file to C:\AuraGuard\ and rename the folder to AuraGuard
 pause
 mkdir "C:\AuraGuard\"
 mkdir "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\AuraGuard\"
