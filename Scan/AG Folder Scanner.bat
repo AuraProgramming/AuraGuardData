@@ -48,6 +48,7 @@ pause
 ren "*gvpr*.exe" "*gvpr*.agq"
 move "%DRIVE%\*gvpr*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
+echo "*gvpr*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
 pause
 goto start
 
@@ -57,6 +58,7 @@ pause
 ren "*scalc*.exe" "*scalc*.agq"
 move "%DRIVE%\*scalc*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
+echo "*scalc*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
 pause
 goto start
 
@@ -66,6 +68,7 @@ pause
 ren "*popen*.exe" "*popen*.agq"
 move "%DRIVE%\*popen*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
+echo "*popen*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
 pause
 goto start
 
@@ -75,6 +78,7 @@ pause
 ren "*cyclic*.exe" "*cyclic*.agq"
 move "%DRIVE%\*cyclic*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
+echo "*cyclic*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
 pause
 goto start
 
@@ -84,6 +88,7 @@ pause
 ren "*clic*.exe" "*clic*.agq"
 move "%DRIVE%\*clic*.agq" C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
+echo "*clic*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
 pause
 goto start
 
@@ -93,6 +98,7 @@ pause
 ren "*acy*.exe" "*acy*.agq"
 move "%DRIVE%\*acy*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
+echo "*acy*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
 pause
 goto start
 
@@ -102,6 +108,7 @@ pause
 ren "*draw*.exe" "*draw*.agq"
 move "%DRIVE%\*draw*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
+echo "*draw*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
 pause
 goto start
 
@@ -111,6 +118,7 @@ pause
 ren "*file*.exe" "*file*.agq"
 move "%DRIVE%\*file*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
+echo "*file*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
 pause
 goto start
 
@@ -120,6 +128,7 @@ pause
 ren "*good*.exe" "*good*.agq"
 move "%DRIVE%\*good*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
+echo "*good*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
 pause
 goto start
 
@@ -129,6 +138,7 @@ pause
 ren "*1*.exe" "*1*.agq"
 move "%DRIVE%\*1*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
+echo "*1*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
 pause
 goto start
 
