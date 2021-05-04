@@ -46,7 +46,7 @@ IF NOT EXIST *good*.exe goto clean
 echo "*gvpr*.exe in %DRIVE% is potentially infected
 pause
 ren "*gvpr*.exe" "*gvpr*.agq"
-move "%DRIVE%\*gvpr*.agq" "C:\AuraGuard\AG Quarantine\"
+move "%DRIVE%\*gvpr*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto start
@@ -55,7 +55,7 @@ goto start
 echo "*scalc*.exe" in %DRIVE% is potentially infected
 pause
 ren "*scalc*.exe" "*scalc*.agq"
-move "%DRIVE%\*scalc*.agq" "C:\AuraGuard\AG Quarantine\"
+move "%DRIVE%\*scalc*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto start
@@ -64,7 +64,7 @@ goto start
 echo "*popen*.exe" in %DRIVE% is potentially infected
 pause
 ren "*popen*.exe" "*popen*.agq"
-move "%DRIVE%\*popen*.agq" "C:\AuraGuard\AG Quarantine\"
+move "%DRIVE%\*popen*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto start
@@ -73,7 +73,7 @@ goto start
 echo "*cyclic*.exe" in %DRIVE% is potentially infected
 pause
 ren "*cyclic*.exe" "*cyclic*.agq"
-move "%DRIVE%\*cyclic*.agq" "C:\AuraGuard\AG Quarantine\"
+move "%DRIVE%\*cyclic*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto start
@@ -82,7 +82,7 @@ goto start
 echo "*clic*.exe" in %DRIVE% is potentially infected
 pause
 ren "*clic*.exe" "*clic*.agq"
-move "%DRIVE%\*clic*.agq" C:\AuraGuard\AG Quarantine\"
+move "%DRIVE%\*clic*.agq" C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto start
@@ -91,7 +91,7 @@ goto start
 echo "*acy*.exe" in %DRIVE% is potentially infected
 pause
 ren "*acy*.exe" "*acy*.agq"
-move "%DRIVE%\*acy*.agq" "C:\AuraGuard\AG Quarantine\"
+move "%DRIVE%\*acy*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto start
@@ -100,7 +100,7 @@ goto start
 echo "*draw*.exe" in %DRIVE% is potentially infected
 pause
 ren "*draw*.exe" "*draw*.agq"
-move "%DRIVE%\*draw*.agq" "C:\AuraGuard\AG Quarantine\"
+move "%DRIVE%\*draw*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto start
@@ -109,7 +109,7 @@ goto start
 echo "*file*.exe" in %DRIVE% is potentially infected
 pause
 ren "*file*.exe" "*file*.agq"
-move "%DRIVE%\*file*.agq" "C:\AuraGuard\AG Quarantine\"
+move "%DRIVE%\*file*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto start
@@ -118,7 +118,7 @@ goto start
 echo "*file*.exe" in %DRIVE% is potentially infected
 pause
 ren "*good*.exe" "*good*.agq"
-move "%DRIVE%\*good*.agq" "C:\AuraGuard\AG Quarantine\"
+move "%DRIVE%\*good*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto start
@@ -127,7 +127,7 @@ goto start
 echo "*file*.exe" in %DRIVE% is potentially infected
 pause
 ren "*1*.exe" "*1*.agq"
-move "%DRIVE%\*1*.agq" "C:\AuraGuard\AG Quarantine\"
+move "%DRIVE%\*1*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 echo Threat disinfected.
 pause
 goto start
