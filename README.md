@@ -4,5 +4,3 @@ AG Folder Scaner detects viruses SOLELY on names.
 This means that any file with a similar name to a malware will be detected.  
 If this is the case, please close out of the tab and don't press anything else if the file is important.  
 AuraGuard was created to ASSIST other AV software.  
-If you are suspicious of a file NAME then run a scan with Aura Guard. 
-If you are suspicious of a file in any other circumstance, run a scan with whatever other AV software you have, or AuraGuard File Scanner.
