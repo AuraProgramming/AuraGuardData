@@ -9,3 +9,5 @@ move "C:\AuraGuard\AuraGuard\AuraGuardOS-Basic\Scan\AG Folder Scanner.lnk" "C:\P
 move "C:\AuraGuard\AuraGuard\AuraGuardOS-Basic\Scan\AG Folder Scanner.lnk" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\AuraGuard\"
 move "C:\AuraGuard\AuraGuard\AuraGuardOS-Basic\Cleanup\AG Cleanup.lnk" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\AuraGuard\"
 move "C:\AuraGuard\AuraGuard\AuraGuardOS-Basic\Cleanup\AG Temp Scrub.lnk" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\AuraGuard\"
+CD C:\AuraGuard\
+del /q "AG Setup.bat"
