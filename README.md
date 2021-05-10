@@ -1,7 +1,17 @@
-# README
-AuraGuard does not off web protection, doesn't automatically detect viruses (yet), and cannot scan any other drives than C: unless you have cmd.exe in said drive.
-Please do not use AuraGuard as primary AV software.  
-AG Folder Scaner detects viruses SOLELY on names.  
-This means that any file with a similar name to a malware will be detected.  
-If this is the case, please close out of the tab and don't press anything else if the file is important.  
-AuraGuard was created to ASSIST other AV software.  
+# AuraGuard
+## A Pretty Trash AntiVirus ##
+AuraGuard is a Microsoft Batch file Anti-virus software
+that only runs on Windows.  It has an MD5 Data Base of
+about 40,000 hashes and counting, which is nothing
+compared to legitimate anti-viruses. like BitDefender
+and MalwareBytes.  You can  help supply our data base
+with MD5 Hashes in the below link:
+- https://forms.gle/eWdNBzQaYGzCMPfD6
+## Current Features ##
+- File Scanner to scan a file against 40,000 MD5 Hashes
+- Folder Scanner to scan suspicious file names in folders
+- Executable File Cleanup which will delete all executable files
+- Temp Directory Scrub which deletes all files in Temp Directory
+- Power DNS Flush which releases and refetches your IP Address, and then infinitly DNS flushes
+- Real Time Protection (BETA) Blocks Malicious Websites
+## Download Now! ##
