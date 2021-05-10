@@ -15,3 +15,10 @@ with MD5 Hashes in the below link:
 - Power DNS Flush which releases and refetches your IP Address, and then infinitly DNS flushes
 - Real Time Protection (BETA) Blocks Malicious Websites
 ## Download Now! ##
+
+
+
+
+# Notice
+Extract the .ZIP file into C:\
+For AuraGuard to fully work
