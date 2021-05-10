@@ -11,39 +11,39 @@ IF NOT EXIST %DRIVE% goto DRIVESELECT
 cls
 echo Scanning for known viruses...
 CD "%DRIVE%"
-IF EXIST *good*.exe goto disinfectgoodexe
-IF EXIST *draw*.exe goto disinfectdrawexe
-IF EXIST *1*.exe goto disinfect1exe
-IF EXIST *file*.exe goto disinfectfileexe
-IF EXIST *acy*.exe goto disinfectacyexe
-IF EXIST *clic*.exe goto disinfectclicexe
-IF EXIST *cyclic*.exe goto disinfectcyclicexe
-IF EXIST *gvpr*.exe goto disinfectgvprexe
-IF EXIST *popen*.exe goto disinfectpopenexe
-IF EXIST *scalc*.exe goto disinfectscalcexe
+IF EXIST "*good*.exe" goto disinfectgoodexe
+IF EXIST "*draw*.exe" goto disinfectdrawexe
+IF EXIST "*1*.exe goto" disinfect1exe
+IF EXIST "*file*.exe" goto disinfectfileexe
+IF EXIST "*acy*.exe" goto disinfectacyexe
+IF EXIST "*clic*.exe" goto disinfectclicexe
+IF EXIST "*cyclic*.exe" goto disinfectcyclicexe
+IF EXIST "*gvpr*.exe" goto disinfectgvprexe
+IF EXIST "*popen*.exe" goto disinfectpopenexe
+IF EXIST "*scalc*.exe" goto disinfectscalcexe
 
-IF NOT EXIST *acy*.exe goto scan1
+IF NOT EXIST "*acy*.exe" goto scan1
 :scan1
-IF NOT EXIST *draw*.exe goto scan2
+IF NOT EXIST "*draw*.exe" goto scan2
 :scan2
-IF NOT EXIST *file*.exe goto scan3
+IF NOT EXIST "*file*.exe" goto scan3
 :scan3
-IF NOT EXIST *1*.exe goto scan4
+IF NOT EXIST "*1*.exe" goto scan4
 :scan4
-IF NOT EXIST *clic*.exe goto scan5
+IF NOT EXIST "*clic*.exe" goto scan5
 :scan5
-IF NOT EXIST *cyclic* goto scan6
+IF NOT EXIST "*cyclic*" goto scan6
 :scan6
-IF NOT EXIST *gvpr*.exe goto scan7
+IF NOT EXIST "*gvpr*.exe" goto scan7
 :scan7
-IF NOT EXIST *popen*.exe goto scan8
+IF NOT EXIST "*popen*.exe" goto scan8
 :scan8
-IF NOT EXIST *scalc*.exe goto scan 9
+IF NOT EXIST "*scalc*.exe" goto scan 9
 :scan9
-IF NOT EXIST *good*.exe goto clean
+IF NOT EXIST "*good*.exe" goto clean
 
 :disinfectgvprexe
-echo "*gvpr*.exe in %DRIVE% is potentially infected
+echo "*gvpr*.exe" in %DRIVE% is potentially infected
 pause
 ren "*gvpr*.exe" "*gvpr*.agq"
 move "%DRIVE%\*gvpr*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
@@ -123,7 +123,7 @@ pause
 goto start
 
 :disinfectgoodexe
-echo "*file*.exe" in %DRIVE% is potentially infected
+echo "*good*.exe" in %DRIVE% is potentially infected
 pause
 ren "*good*.exe" "*good*.agq"
 move "%DRIVE%\*good*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
@@ -133,7 +133,7 @@ pause
 goto start
 
 :disinfect1exe
-echo "*file*.exe" in %DRIVE% is potentially infected
+echo "*1*.exe" in %DRIVE% is potentially infected
 pause
 ren "*1*.exe" "*1*.agq"
 move "%DRIVE%\*1*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
