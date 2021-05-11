@@ -18,6 +18,7 @@ with MD5 Hashes in the below link:
 - Temp Directory Scrub which deletes all files in Temp Directory
 - Power DNS Flush which releases and refetches your IP Address, and then infinitly DNS flushes
 - Real Time Protection (BETA) Blocks Malicious Websites
+- Firewall that monitors IP connections
 
 [![Image](https://img.shields.io/badge/Download-V0.5%20BETA-success?style=for-the-badge)](https://github.com/AuraProgramming/AuraGuardOS/archive/refs/tags/BETA0.5.zip)
 [![Imagee](https://img.shields.io/badge/AuraGuard%20Premium-success?style=for-the-badge)](https://www.patreon.com/auraprogramming)
