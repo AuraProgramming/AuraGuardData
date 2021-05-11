@@ -23,4 +23,6 @@ with MD5 Hashes in the below link:
 
 
 # Notice
-Extract the .ZIP file into C:\ and rename it to AuraGuard for AuraGuard to fully work
+Extract the .ZIP file into C:\ and rename it to AuraGuard for AuraGuard to fully work.
+You may also have to rename the 2nd Folder to AuraGuardOS-Basic if you downloaded from
+releases.
