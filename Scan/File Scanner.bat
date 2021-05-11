@@ -3,10 +3,12 @@
 		title AG File Scanner
 		
 echo Enter file path:
-	set /p file= 
-		powershell Get-FileHash %file% -Algorithm MD5 ^| Format-Table -Property Hash>scannedhash.txt
-			cls
+	:get hash:
+		set /p file= 
+			powershell Get-FileHash %file% -Algorithm MD5 ^| Format-Table -Property Hash>scannedhash.txt
+				cls
 
+:scan:
 for /f "tokens=* delims= " %%x in (scannedhash.txt) do (
 	for /f "tokens=* delims= " %%y in ("AG DB.txt") do (
 		if "%%x" == "%%y" (
@@ -19,8 +21,9 @@ for /f "tokens=* delims= " %%x in (scannedhash.txt) do (
 		)
 	)
 )
+
 del /q scannedhash.txt
-echo. No threats found!
-pause
-cls
-exit
+	echo. No threats found!
+	pause
+		cls
+		exit
