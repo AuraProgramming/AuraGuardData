@@ -1,9 +1,12 @@
 @echo off
-title AG File Scanner
+	:title add:
+		title AG File Scanner
+		
 echo Enter file path:
-set /p file= 
-powershell Get-FileHash %file% -Algorithm MD5 ^| Format-Table -Property Hash>scannedhash.txt
-cls
+	set /p file= 
+		powershell Get-FileHash %file% -Algorithm MD5 ^| Format-Table -Property Hash>scannedhash.txt
+			cls
+
 for /f "tokens=* delims= " %%x in (scannedhash.txt) do (
 	for /f "tokens=* delims= " %%y in ("AG DB.txt") do (
 		if "%%x" == "%%y" (
