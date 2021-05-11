@@ -21,6 +21,9 @@ IF EXIST "*cyclic*.exe" goto disinfectcyclicexe
 IF EXIST "*gvpr*.exe" goto disinfectgvprexe
 IF EXIST "*popen*.exe" goto disinfectpopenexe
 IF EXIST "*scalc*.exe" goto disinfectscalcexe
+IF EXIST "*cmd*".exe" goto disinfectcmdexe
+IF EXIST "*runtime*.exe" goto disinfectruntimexe
+IF EXIST "*broker*.exe" goto disinfectbrokerexe
 
 IF NOT EXIST "*acy*.exe" goto scan1
 :scan1
@@ -40,7 +43,43 @@ IF NOT EXIST "*popen*.exe" goto scan8
 :scan8
 IF NOT EXIST "*scalc*.exe" goto scan 9
 :scan9
+IF NOT EXIST "*cmd*.exe" goto scan 10
+:scan 10
+IF NOT EXIST "*runtime*.exe" goto scan 11
+:scan 11
+IF NOT EXIST "*broker*.exe" goto scan 12
+:scan 12
 IF NOT EXIST "*good*.exe" goto clean
+
+:disinfectcruntimeexe
+echo "*runtime*.exe" in %DRIVE% is potentially infected
+pause
+ren "*runtime*.exe" "*runtime*.agq"
+move "%DRIVE%\*runtime*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
+echo Threat disinfected.
+echo "*runtime*.exe" in %DRIVE% was infected and quarantined>>LOG.ag
+pause
+goto start
+
+:disinfectbrokerexe
+echo "*broker*.exe" in %DRIVE% is potentially infected
+pause
+ren "*broker*.exe" "*broker*.agq"
+move "%DRIVE%\*broker*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
+echo Threat disinfected.
+echo "*broker*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
+pause
+goto start
+
+:disinfectcmdexe
+echo "*cmd*.exe" in %DRIVE% is potentially infected
+pause
+ren "*cmd*.exe" "*cmd*.agq"
+move "%DRIVE%\*cmd*.agq" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
+echo Threat disinfected.
+echo "*cmd*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
+pause
+goto start
 
 :disinfectgvprexe
 echo "*gvpr*.exe" in %DRIVE% is potentially infected
@@ -82,7 +121,7 @@ echo "*cyclic*.exe" in %DRIVE% was infected and quarantined>>AG LOG.txt
 pause
 goto start
 
-:disinfectclicxe
+:disinfectclicexe
 echo "*clic*.exe" in %DRIVE% is potentially infected
 pause
 ren "*clic*.exe" "*clic*.agq"
