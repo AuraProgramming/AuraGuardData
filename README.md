@@ -20,7 +20,7 @@ with MD5 Hashes in the below link:
 - Real Time Protection (BETA) Blocks Malicious Websites
 
 [![Image](https://img.shields.io/badge/Download-V0.5%20BETA-success?style=for-the-badge)](https://github.com/AuraProgramming/AuraGuardOS/archive/refs/tags/BETA0.5.zip)
-[![Imagee](https://img.shields.io/badgeAuraGuard%20Premium-success?style=for-the-badge)](https://www.patreon.com/auraprogramming)
+[![Imagee](https://img.shields.io/badge/AuraGuard%20Premium-success?style=for-the-badge)](https://www.patreon.com/auraprogramming)
 
 # Notice
 Extract the .ZIP file into C:\ and rename it to AuraGuard for AuraGuard to fully work.
