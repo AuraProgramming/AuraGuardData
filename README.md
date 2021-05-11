@@ -20,5 +20,4 @@ with MD5 Hashes in the below link:
 
 
 # Notice
-Extract the .ZIP file into C:\
-For AuraGuard to fully work
+Extract the .ZIP file into C:\ and rename it to AuraGuard for AuraGuard to fully work
