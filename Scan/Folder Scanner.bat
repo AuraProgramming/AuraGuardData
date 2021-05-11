@@ -21,7 +21,7 @@ IF EXIST "*cyclic*.exe" goto disinfectcyclicexe
 IF EXIST "*gvpr*.exe" goto disinfectgvprexe
 IF EXIST "*popen*.exe" goto disinfectpopenexe
 IF EXIST "*scalc*.exe" goto disinfectscalcexe
-IF EXIST "*cmd*".exe" goto disinfectcmdexe
+IF EXIST "*cmd*.exe" goto disinfectcmdexe
 IF EXIST "*runtime*.exe" goto disinfectruntimexe
 IF EXIST "*broker*.exe" goto disinfectbrokerexe
 
