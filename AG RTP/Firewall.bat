@@ -2,15 +2,13 @@
   :title create:
     title Firewall
     
-:create files:
-  echo netstat -b>>FW1.cmd
-  echo netstat -a>>FW2.cmd
-  echo netstat -n>>FW3.cmd
+:monitor create:
+  netstat -a
+  netstat-b
+  netstat-n
   
-  :start firewall:
-    start "*FW*.cmd"
-    
- :exit:
+:exit:
   pause
     cls
-    exit
+      exit
+  
