@@ -39,6 +39,6 @@ echo Enter Folder path:
 ::end::
 	del /q scannedhash.txt
 		echo. No threats found!
-			pause
+			pause>nul
 				cls
 				exit
