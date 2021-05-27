@@ -16,7 +16,7 @@ echo Enter Folder path:
       		for /f " delims=" %%H in ('CertUtil -hashfile "%%~a" MD5 ^| findstr /i /v "CertUtil"') do (
 			set "H=%%H"
        			echo %%a=!H: =!
-        		echo %%a=!H: =! >>"%scannedhashes.txt%
+        		echo %%a=!H: =!>>"scannedhashes.txt
 )
 
 ::screen clear::
