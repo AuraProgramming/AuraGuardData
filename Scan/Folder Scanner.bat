@@ -12,8 +12,9 @@ echo Enter Folder path:
 
 :next
 	::hash discover::
-		for /f "delims=" %%a in ('Dir /S /B  "%folder%\*.*"') do (
-      		for /f " delims=" %%H in ('CertUtil -hashfile "%%~a" MD5 ^| findstr /i /v "CertUtil"') do set "H=%%H"
+		for /d /r %%a in ("%folder%") do (
+      		for /f " delims=" %%H in ('CertUtil -hashfile "%%~a" MD5 ^| findstr /i /v "CertUtil"') do (
+			set "H=%%H"
        			echo %%a=!H: =!
         		echo %%a=!H: =! >>"%scannedhashes.txt%
 )
