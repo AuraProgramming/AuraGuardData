@@ -17,25 +17,23 @@ echo Enter Folder path:
 			set "H=%%H"
        			echo %%a=!H: =!
         		echo %%a=!H: =!>>"scannedhashes.txt
+ 				for /f "tokens=* delims=" %%x in (scannedhashes.txt) do (
+  				for /f "tokens=* delims= " %%b in ("AG DB.txt") do (
+					if "%%x"=="%%b" (
+						ren "%file%" "%file%.AGQ"
+						move "%file%" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
+						echo. %file% was infected and quarantined.
+						echo. %file% was infected and quarantined.>>"LOG.ag"
+						pause >nul
+						cls
+			)
+		)
+	)
 )
 
 ::screen clear::
   cls
 
-::scan::
-  for /d %%n in ("%folder%") do (
-  for /f "tokens=* delims=" %%x in (scannedhashes.txt) do (
-  for /f "tokens=* delims= " %%b in ("AG DB.txt") do (
-	if "%%x"=="%%b" (
-			ren "%file%" "%file%.AGQ"
-			move "%file%" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
-			echo. %file% was infected and quarantined.
-			echo. %file% was infected and quarantined.>>"LOG.ag"
-			pause >nul
-			cls
-		)
-	)
-)
 
 ::end::
 	del /q scannedhash.txt
