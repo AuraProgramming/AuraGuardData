@@ -12,11 +12,14 @@ echo Enter Folder path:
 
 :next
 	::hash discover::
+		cd %folder%
 		for /d /r %%a in ("%folder%") do (
       		for /f " delims=" %%H in ('CertUtil -hashfile "%%~a" MD5 ^| findstr /i /v "CertUtil"') do (
 			set "H=%%H"
        			echo %%a=!H: =!
+			cd %temp%\
         		echo %%a=!H: =!>>"scannedhashes.txt
+			cd %folder%
  				for /f "tokens=* delims=" %%x in (scannedhashes.txt) do (
   				for /f "tokens=* delims= " %%b in ("AG DB.txt") do (
 					if "%%x"=="%%b" (
