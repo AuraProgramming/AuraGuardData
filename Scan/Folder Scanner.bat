@@ -7,8 +7,6 @@ echo Enter Folder path:
 	:file add
 		::get hash::
 			set /p folder=
-				IF EXIST %folder% goto next
-					IF NOT EXIST %folder% goto file add
 
 :next
 	::hash discover::
@@ -39,7 +37,7 @@ echo Enter Folder path:
 
 
 ::end::
-	del /q scannedhash.txt
+	del /q scannedhashes.txt
 		echo. No threats found!
 			pause>nul
 				cls
