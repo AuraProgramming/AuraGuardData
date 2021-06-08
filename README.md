@@ -13,7 +13,7 @@ with MD5 Hashes in the below link:
 
 ## Current Features ##
 - File Scanner to scan a file against 40,000 MD5 Hashes
-- Folder Scanner to scan suspicious file names in folders
+- Folder Scanner to scan multiple files in folders
 - Executable File Cleanup which will delete all executable files
 - Temp Directory Scrub which deletes all files in Temp Directory
 - Power DNS Flush which releases and refetches your IP Address, and then infinitly DNS flushes
