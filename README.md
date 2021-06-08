@@ -20,7 +20,8 @@ with MD5 Hashes in the below link:
 - Real Time Protection (BETA) Blocks Malicious Websites
 - Firewall that monitors IP connections
 
-[![Image](https://img.shields.io/badge/Download-V1.1%20BETA-success?style=for-the-badge)](https://github.com/AuraProgramming/AuraGuardOS/archive/refs/tags/Beta2.zip)
+[![Image](https://img.shields.io/badge/Download-V1.0%20BETA-success?style=for-the-badge)](https://github.com/AuraProgramming/AuraGuardOS/archive/refs/tags/BETA3.zip)
+
 [![Imagee](https://img.shields.io/badge/AuraGuard%20Premium-success?style=for-the-badge)](https://www.patreon.com/auraprogramming)
 
 # Notice
