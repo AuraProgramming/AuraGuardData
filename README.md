@@ -27,3 +27,6 @@ with MD5 Hashes in the below link:
 Extract the .ZIP file into C:\ and rename it to AuraGuard for AuraGuard to fully work.
 You may also have to rename the 2nd Folder to AuraGuardOS-Basic if you downloaded from
 releases.
+
+# Help me out!
+If you wan't to help me out, create a pull request and help add hashes to the database!
