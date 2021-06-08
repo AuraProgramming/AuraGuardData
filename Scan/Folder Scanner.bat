@@ -18,13 +18,14 @@ echo Enter Folder path:
 			cd %temp%\
         		echo %%a=!H: =!>>"scannedhashes.txt
 			cd %folder%
- 				for /f "tokens=* delims=" %%x in (scannedhashes.txt) do (
+ 				for /f "tokens=* delims= " %%x in (scannedhashes.txt) do (
   				for /f "tokens=* delims= " %%b in ("AG DB.txt") do (
-					if "%%x"=="%%b" (
+					if "%%x"=="%%b" do (
 						ren "%file%" "%file%.AGQ"
 						move "%file%" "C:\AuraGuard\AuraGuardOS-Basic\AG Quarantine\"
 						echo. %file% was infected and quarantined.
-						echo. %file% was infected and quarantined.>>"LOG.ag"
+						CD "C:\AuraGuard\AuraGuardOS-Basic\"
+						echo. %file% was infected and quarantined.>>"LOG (OPEN WITH NOTEPAD).ag"
 						pause >nul
 						cls
 			)
