@@ -22,7 +22,7 @@ with MD5 Hashes in the below link:
 
 [![Image](https://img.shields.io/badge/Download-V1.0%20BETA-success?style=for-the-badge)](https://github.com/AuraProgramming/AuraGuardOS/archive/refs/tags/BETA3.zip)
 
-[![Imagee](https://img.shields.io/badge/Support%20Me-success?style=for-the-badge)](https://www.patreon.com/auraprogramming)
+[![Imagee](https://img.shields.io/badge/Support%20Me!-success?style=for-the-badge)](https://www.patreon.com/auraprogramming)
 
 # Notice
 Extract the .ZIP file into C:\ and rename it to AuraGuard for AuraGuard to fully work.
